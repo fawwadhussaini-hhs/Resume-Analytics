@@ -241,7 +241,7 @@ for msg in st.session_state.messages:
         st.markdown(msg["content"])
 
 # User Input
-if prompt := st.chat_input("Ask about candidates (e.g., 'Find React devs', then 'Which of them know AWS?')"):
+if prompt := st.chat_input("Ask about candidates (e.g., 'Find me Maths teacher for primary classes', then 'Which of them have 3 years or more experience ?')"):
     # 1. Show user message
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
